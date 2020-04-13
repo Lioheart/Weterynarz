@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#D:/Programowanie/Weterynarz/rezerwacje.py</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">rezerwacje.Reservations</node>
+    <node x="1371.0" y="7534.0">PyQt5.QtCore.QObject.QObject</node>
+    <node x="1003.0" y="7534.0">PyQt5.QtGui.QPaintDevice.QPaintDevice</node>
+    <node x="256.0" y="1457.0">PyQt5.QtWidgets.QWidget.QWidget</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="PyQt5.QtWidgets.QWidget.QWidget" target="PyQt5.QtGui.QPaintDevice.QPaintDevice">
+      <point x="0.0" y="0.0" />
+      <point x="1167.0" y="4475.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rezerwacje.Reservations" target="PyQt5.QtWidgets.QWidget.QWidget">
+      <point x="0.0" y="0.0" />
+      <point x="609.5" y="708.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="PyQt5.QtWidgets.QWidget.QWidget" target="PyQt5.QtCore.QObject.QObject">
+      <point x="0.0" y="0.0" />
+      <point x="1521.5" y="4475.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Tree" zoom="1.0" x="302.0" y="96.5" />
+  <SelectedNodes>
+    <node>PyQt5.QtWidgets.QWidget.QWidget</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+

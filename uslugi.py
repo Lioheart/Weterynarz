@@ -161,15 +161,13 @@ class Services(QWidget):
             print('Trwa zmiana w bazie danych')
             if val:
                 print('Połączenie')
-                polaczenie(q, val)
+                t = polaczenie(q, val)
+                print(t)
+                return t  # = polaczenie(q, val)
             else:
                 print('Transakcja')
                 return transakcja(q)
 
-            # Odświeżanie widoku tabeli
-            self.model.select()
-            self.view.reset()
-            return True
 
     def add(self):
         """
@@ -191,6 +189,15 @@ class Services(QWidget):
             msg.setText('Dodano nową usługę')
             msg.setWindowTitle("Dodano nową usługę")
             msg.exec_()
+        else:
+            msg = QMessageBox(self)
+            msg.setIcon(QMessageBox.Warning)
+            msg.setText('Usługa znajduje się już w bazie')
+            msg.setWindowTitle("Błąd!")
+            msg.exec_()
+        # Odświeżanie widoku tabeli
+        self.model.select()
+        self.view.reset()
 
     def modify(self):
         """
@@ -212,6 +219,9 @@ class Services(QWidget):
             msg.setText('Informacje o usłudze zostały pomyślnie zmodyfikowane')
             msg.setWindowTitle("Zmodyfikowano usługi")
             msg.exec_()
+        # Odświeżanie widoku tabeli
+        self.model.select()
+        self.view.reset()
 
     def remove(self):
         """
@@ -234,6 +244,10 @@ class Services(QWidget):
                 self.txt_cena.setText('')
                 self.txt_czas.setText('')
                 self.txt_opis.setText('')
+
+        # Odświeżanie widoku tabeli
+        self.model.select()
+        self.view.reset()
 
     @pyqtSlot(str)
     def wyszukiwanie(self, text):

@@ -46,7 +46,7 @@ def polaczenie(q, sqlinjection=None):
     mydb.close()
     print("Zamknięto połączenie")
 
-    return myresult
+    return myresult or True
 
 
 def transakcja(*args):

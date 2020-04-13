@@ -135,8 +135,9 @@ class Customer(QWidget):
         Inicjuje wygląd tabeli
         """
         self.model.setTable('klienci')
-        query = QSqlQuery('SELECT klienci_id, imie, nazwisko, email, telefon, ulica, numer_mieszkania, miejscowosc, poczta FROM '
-                          'klienci;')
+        query = QSqlQuery(
+            'SELECT klienci_id, imie, nazwisko, email, telefon, ulica, numer_mieszkania, miejscowosc, poczta FROM '
+            'klienci;')
         self.model.setQuery(query)
         self.proxy.setSourceModel(self.model)
 
@@ -147,7 +148,7 @@ class Customer(QWidget):
             "email": 'Email',
             'telefon': 'Telefon',
             'ulica': 'Ulica',
-            'numer_mieszkania':'Numer mieszkania',
+            'numer_mieszkania': 'Numer mieszkania',
             'miejscowosc': 'Miejscowosc',
             'poczta': 'Kod pocztowy',
         }
@@ -190,9 +191,6 @@ class Customer(QWidget):
                 print('Transakcja')
                 return transakcja(q)
 
-            # Odświeżanie widoku tabeli
-            self.model.select()
-            self.view.reset()
             return True
 
     def add(self):
@@ -220,6 +218,9 @@ class Customer(QWidget):
             msg.setText('Klient został dodany do bazy danych')
             msg.setWindowTitle("Dodano nowego klienta")
             msg.exec_()
+        # Odświeżanie widoku tabeli
+        self.model.select()
+        self.view.reset()
 
     def modify(self):
         """
@@ -246,6 +247,9 @@ class Customer(QWidget):
             msg.setText('Dane klienta zostały pomyślnie zmodyfikowane')
             msg.setWindowTitle("Dane klienta zostały zmodyfikowane")
             msg.exec_()
+        # Odświeżanie widoku tabeli
+        self.model.select()
+        self.view.reset()
 
     def remove(self):
         """
@@ -271,7 +275,11 @@ class Customer(QWidget):
                 self.txt_ulica.setText(''),
                 self.txt_nr_dom.setText(''),
                 self.txt_miasto.setText(''),
-                self.txt_kod.setText(''),
+                self.txt_kod.setText('')
+
+        # Odświeżanie widoku tabeli
+        self.model.select()
+        self.view.reset()
 
     @pyqtSlot(str)
     def wyszukiwanie(self, text):

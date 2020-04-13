@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#D:/Programowanie/Weterynarz/program.py</OriginalElement>
+  <nodes>
+    <node x="2285.0" y="8480.0">program.Program</node>
+    <node x="1672.0" y="6077.0">PyQt5.QtWidgets.QMainWindow.QMainWindow</node>
+    <node x="1115.0" y="6077.0">PyQt5.QtCore.QObject.QObject</node>
+    <node x="747.0" y="6077.0">PyQt5.QtGui.QPaintDevice.QPaintDevice</node>
+    <node x="0.0" y="0.0">PyQt5.QtWidgets.QWidget.QWidget</node>
+    <node x="1456.0" y="6077.0">program.TabsWidget</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="PyQt5.QtWidgets.QMainWindow.QMainWindow" target="PyQt5.QtWidgets.QWidget.QWidget">
+      <point x="0.0" y="0.0" />
+      <point x="1958.5" y="3018.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="PyQt5.QtWidgets.QWidget.QWidget" target="PyQt5.QtGui.QPaintDevice.QPaintDevice">
+      <point x="0.0" y="0.0" />
+      <point x="911.0" y="3018.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="PyQt5.QtWidgets.QWidget.QWidget" target="PyQt5.QtCore.QObject.QObject">
+      <point x="0.0" y="0.0" />
+      <point x="1265.5" y="3018.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="program.TabsWidget" target="PyQt5.QtWidgets.QWidget.QWidget">
+      <point x="0.0" y="0.0" />
+      <point x="1544.0" y="3018.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="program.Program" target="PyQt5.QtWidgets.QMainWindow.QMainWindow">
+      <point x="0.0" y="0.0" />
+      <point x="2361.5" y="7258.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Tree" zoom="1.0" x="466.0" y="137.0" />
+  <SelectedNodes>
+    <node>program.TabsWidget</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+

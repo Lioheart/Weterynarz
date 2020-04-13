@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#D:/Programowanie/Weterynarz/zmiana_hasla.py</OriginalElement>
+  <nodes>
+    <node x="1355.0" y="6390.0">PyQt5.QtCore.QObject.QObject</node>
+    <node x="987.0" y="6390.0">PyQt5.QtGui.QPaintDevice.QPaintDevice</node>
+    <node x="240.0" y="313.0">PyQt5.QtWidgets.QWidget.QWidget</node>
+    <node x="0.0" y="0.0">zmiana_hasla.Password</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="PyQt5.QtWidgets.QWidget.QWidget" target="PyQt5.QtGui.QPaintDevice.QPaintDevice">
+      <point x="0.0" y="0.0" />
+      <point x="1151.0" y="3331.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="zmiana_hasla.Password" target="PyQt5.QtWidgets.QWidget.QWidget">
+      <point x="0.0" y="0.0" />
+      <point x="593.5" y="136.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="PyQt5.QtWidgets.QWidget.QWidget" target="PyQt5.QtCore.QObject.QObject">
+      <point x="0.0" y="0.0" />
+      <point x="1505.5" y="3331.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Tree" zoom="1.0" x="302.0" y="96.5" />
+  <SelectedNodes>
+    <node>zmiana_hasla.Password</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+</Diagram>
+

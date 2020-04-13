@@ -72,7 +72,7 @@ class UI_Logowanie(QDialog):
         """
         login = self.txtlogin.text()
         haslo = self.txthaslo.text()
-        query = "SELECT * FROM uzytkownik WHERE uzytkownik_nazwa = '{}' AND haslo = sha({}) ;".format(login, haslo)
+        query = "SELECT * FROM uzytkownik WHERE uzytkownik_nazwa = '{}' AND haslo = sha('{}');".format(login, haslo)
         odczytanie = polaczenie(query)
         if odczytanie:
             self.accept()

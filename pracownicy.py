@@ -291,6 +291,16 @@ class Employee(QWidget):
             msg.setText('Dodano nowego użytkownika')
             msg.setWindowTitle("Dodano użytkownika")
             msg.exec_()
+        else:
+            msg = QMessageBox(self)
+            msg.setIcon(QMessageBox.Warning)
+            msg.setText('Dany użytkownik istnieje już w bazie')
+            msg.setWindowTitle("Błąd!")
+            msg.exec_()
+
+        # Odświeżanie widoku tabeli
+        self.model.select()
+        self.view.reset()
 
     def modify(self):
         """
@@ -358,6 +368,10 @@ class Employee(QWidget):
         msg.setWindowTitle("Zmodyfikowano użytkownika")
         msg.exec_()
 
+        # Odświeżanie widoku tabeli
+        self.model.select()
+        self.view.reset()
+
     def remove(self):
         """
         Usuwa dane z bazy danych
@@ -389,6 +403,10 @@ class Employee(QWidget):
                     self.txt_nazwisko.setText('')
                     if self.cb_pracownik.checkState():
                         self.cb_pracownik.toggle()
+
+        # Odświeżanie widoku tabeli
+        self.model.select()
+        self.view.reset()
 
     def change(self):
         """

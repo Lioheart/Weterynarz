@@ -149,9 +149,9 @@ class Reservations(QWidget):
         hbox_t.addWidget(lbl_termin)
         hbox_t.addWidget(self.lbl_termin_)
         vbox_cal.addWidget(self.kalendarz)
-        vbox_cal.addLayout(hbox_k)
-        vbox_cal.addLayout(hbox_t)
         vbox_cal.addLayout(hbox_u)
+        vbox_cal.addLayout(hbox_t)
+        vbox_cal.addLayout(hbox_k)
         self.view.setSizePolicy(QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Minimum))
         vbox_cal.addWidget(self.view)
         vbox_cal.addLayout(hbox_btn)
@@ -394,7 +394,7 @@ class Reservations(QWidget):
         :param q: zapytanie query MySql
         :param txt: komunikat
         """
-        if self.id_klient < 0 or self.id_pracownik < 0 or self.id_usluga < 0 or self.data:
+        if self.id_klient < 0 and self.id_pracownik < 0 and self.id_usluga < 0 and self.data is None:
             msg = QMessageBox(self)
             msg.setIcon(QMessageBox.Warning)
             msg.setText(txt)
@@ -419,7 +419,7 @@ class Reservations(QWidget):
         # Odświeżanie widoku tabeli
         query = QSqlQuery(
             'SELECT wizyty.wizyty_id, CONCAT(klienci.imie, " ", klienci.nazwisko) AS klient, uslugi.nazwa, '
-            'wizyty.rezerwacja_od, wizyty.rezerwacja_do, wizyty.status FROM klienci, uslugi NATURAL JOIN wizyty WHERE wizyty.rezerwacja_od > CURRENT_TIMESTAMP AND wizyty.uzytkownik_id = ' + str(
+            'wizyty.rezerwacja_od, wizyty.rezerwacja_do, wizyty.status FROM wizyty,klienci,uslugi WHERE wizyty.klienci_id= klienci.klienci_id AND wizyty.uslugi_id = uslugi.uslugi_id AND wizyty.rezerwacja_od > CURRENT_TIMESTAMP AND wizyty.uzytkownik_id = ' + str(
                 self.id_pracownik) + ';')
         self.model.setQuery(query)
         self.view.reset()
@@ -433,7 +433,6 @@ class Reservations(QWidget):
         self.data_do = datetime.datetime.fromisoformat(self.data) + datetime.timedelta(
             hours=datetime.time.fromisoformat(self.data_do).hour,
             minutes=datetime.time.fromisoformat(self.data_do).minute)
-        self.data_do = datetime.time.fromisoformat(self.data_do).hour
         # Dodanie nowego użytkownika
         query = 'INSERT INTO wizyty (klienci_id, uslugi_id, uzytkownik_id, rezerwacja_od, rezerwacja_do, ' \
                 'status) VALUES (%s, %s, %s, %s, %s, %s);'
@@ -442,7 +441,7 @@ class Reservations(QWidget):
             self.id_usluga,
             self.id_pracownik,
             self.data,
-            self.data_do,
+            str(self.data_do.isoformat()),
             'oczekuje'
         )
         print(val)

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#D:/Programowanie/Weterynarz/main.py</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">main.UI_Logowanie</node>
+    <node x="1918.0" y="7913.0">PyQt5.QtCore.QObject.QObject</node>
+    <node x="1550.0" y="7913.0">PyQt5.QtGui.QPaintDevice.QPaintDevice</node>
+    <node x="803.0" y="1836.0">PyQt5.QtWidgets.QWidget.QWidget</node>
+    <node x="208.0" y="269.0">PyQt5.QtWidgets.QDialog.QDialog</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="PyQt5.QtWidgets.QWidget.QWidget" target="PyQt5.QtGui.QPaintDevice.QPaintDevice">
+      <point x="0.0" y="0.0" />
+      <point x="1714.0" y="4854.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main.UI_Logowanie" target="PyQt5.QtWidgets.QDialog.QDialog">
+      <point x="0.0" y="0.0" />
+      <point x="485.5" y="114.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="PyQt5.QtWidgets.QDialog.QDialog" target="PyQt5.QtWidgets.QWidget.QWidget">
+      <point x="0.0" y="0.0" />
+      <point x="1156.5" y="1032.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="PyQt5.QtWidgets.QWidget.QWidget" target="PyQt5.QtCore.QObject.QObject">
+      <point x="0.0" y="0.0" />
+      <point x="2068.5" y="4854.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Tree" zoom="1.0" x="302.0" y="137.0" />
+  <SelectedNodes>
+    <node>PyQt5.QtWidgets.QDialog.QDialog</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+</Diagram>
+
