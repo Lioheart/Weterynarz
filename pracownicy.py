@@ -381,6 +381,8 @@ class Employee(QWidget):
         val1 = (self.id_modify,)
         query2 = 'DELETE FROM godziny WHERE uzytkownik_id = %s'
         val2 = (self.id_modify,)
+        query3 = 'DELETE FROM uzytkownik_usluga WHERE uzytkownik_id = %s'
+        val3 = (self.id_modify,)
         if self.id_modify == 1:
             msg = QMessageBox()
             msg.setIcon(QMessageBox.Critical)
@@ -391,7 +393,7 @@ class Employee(QWidget):
             ret = QMessageBox.question(self, 'Usuwanie użytkownika', "Czy na pewno chcesz usunąć danego użytkownika?",
                                        QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
             if ret == QMessageBox.Yes:
-                if self.if_checked(test, [(query2, val2), (query1, val1)]):
+                if self.if_checked(test, [(query3, val3), (query2, val2), (query1, val1)]):
                     msg = QMessageBox()
                     msg.setIcon(QMessageBox.Information)
                     msg.setText('Użytkownik został usunięty')

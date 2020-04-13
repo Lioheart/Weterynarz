@@ -129,7 +129,6 @@ class Services(QWidget):
         index = (self.view.selectionModel().currentIndex())
         value = index.sibling(index.row(), index.column()).data()
         self.id_modify = index.sibling(index.row(), 0).data()
-        print(index.sibling(index.row(), 2).data())
         self.txt_nazwa.setText(index.sibling(index.row(), 1).data())
         self.txt_cena.setText(str(index.sibling(index.row(), 2).data()))
         self.txt_czas.setText(index.sibling(index.row(), 3).data())
