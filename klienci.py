@@ -257,11 +257,12 @@ class Customer(QWidget):
         """
         test = 'Błąd! Nie można usunąć danej usługi!'
         query = 'DELETE FROM klienci WHERE klienci_id = %s'
+        query1 = 'DELETE FROM wizyty WHERE klienci_id = %s'
         val = (self.id_modify,)
         ret = QMessageBox.question(self, 'Usuwanie klienta', "Czy na pewno chcesz usunąć danego klienta?",
                                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if ret == QMessageBox.Yes:
-            if self.if_checked(test, query, val):
+            if self.if_checked(test, [(query1, val), (query, val)]):
                 msg = QMessageBox()
                 msg.setIcon(QMessageBox.Information)
                 msg.setText('Klient został usunięty')

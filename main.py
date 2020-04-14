@@ -9,9 +9,7 @@ from PyQt5 import QtWidgets
 from PyQt5.QtCore import QTranslator
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QStyleFactory, QDialogButtonBox, QDialog, QLabel, QLineEdit, QFormLayout, \
-    QMessageBox
-import threading
-import time
+    QMessageBox, QApplication
 
 from baza import polaczenie
 from program import Program
@@ -93,7 +91,7 @@ class UI_Logowanie(QDialog):
 
 
 if __name__ == "__main__":
-    app = QtWidgets.QApplication(sys.argv)
+    app = QApplication(sys.argv)
     app.setStyle(QStyleFactory.create('Fusion'))
     app.setWindowIcon(QIcon('icons/pawprint.png'))
 

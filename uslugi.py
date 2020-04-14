@@ -167,7 +167,6 @@ class Services(QWidget):
                 print('Transakcja')
                 return transakcja(q)
 
-
     def add(self):
         """
         Dodaje nową usługę do bazy danych i odświeża widok.
@@ -227,12 +226,14 @@ class Services(QWidget):
         Usuwa dane z bazy danych
         """
         test = 'Błąd! Nie można usunąć danej usługi!'
+        query2 = 'DELETE FROM wizyty WHERE uslugi_id = %s'
         query = 'DELETE FROM uslugi WHERE uslugi_id = %s'
         val = (self.id_modify,)
+        query1 = 'DELETE FROM uzytkownik_usluga WHERE uslugi_id = %s'
         ret = QMessageBox.question(self, 'Usuwanie usługi', "Czy na pewno chcesz usunąć daną usługę?",
                                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if ret == QMessageBox.Yes:
-            if self.if_checked(test, query, val):
+            if self.if_checked(test, [(query2, val), (query1, val), (query, val)]):
                 msg = QMessageBox()
                 msg.setIcon(QMessageBox.Information)
                 msg.setText('Usługa została usunięta')

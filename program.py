@@ -4,6 +4,7 @@ Wyświetla główne okno programu
 import sys
 
 from PyQt5.QtCore import QSettings
+from PyQt5.QtGui import QIcon
 from PyQt5.QtSql import QSqlDatabase, QSqlTableModel
 from PyQt5.QtWidgets import QMainWindow, QApplication, QDesktopWidget, QWidget, QVBoxLayout, QTabWidget
 
@@ -103,12 +104,12 @@ class TabsWidget(QWidget):
         tab5 = Employee(self, self.parent.db)
         tab6 = Password(self)
 
-        tabs.addTab(tab1, 'Rezerwacje')
-        tabs.addTab(tab2, 'Klienci')
-        tabs.addTab(tab3, 'Pracownik-Usługi')
-        tabs.addTab(tab4, 'Usługi')
-        tabs.addTab(tab5, 'Pracownicy')
-        tabs.addTab(tab6, 'Zmiana hasła')
+        tabs.addTab(tab1, QIcon('icons/rezerwacje.png'), 'Rezerwacje')
+        tabs.addTab(tab2, QIcon('icons/klienci.png'), 'Klienci')
+        tabs.addTab(tab3, QIcon('icons/uslugi_pracownicy.png'), 'Pracownik-Usługi')
+        tabs.addTab(tab4, QIcon('icons/uslugi.png'), 'Usługi')
+        tabs.addTab(tab5, QIcon('icons/pracownicy.png'), 'Pracownicy')
+        tabs.addTab(tab6, QIcon('icons/ustawienia.png'), 'Zmiana hasła')
 
         self.layout.addWidget(tabs)
         self.setLayout(self.layout)

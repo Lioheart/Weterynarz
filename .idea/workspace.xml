@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="12c47430-bc9a-45f5-b132-55044d454314" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baza.py" beforeDir="false" afterPath="$PROJECT_DIR$/baza.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/klienci.py" beforeDir="false" afterPath="$PROJECT_DIR$/klienci.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pracownicy.py" beforeDir="false" afterPath="$PROJECT_DIR$/pracownicy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/qt_pl.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resources/qt_pl.qm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rezerwacje.py" beforeDir="false" afterPath="$PROJECT_DIR$/rezerwacje.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uslugi.py" beforeDir="false" afterPath="$PROJECT_DIR$/uslugi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +230,9 @@
       <workItem from="1586777677941" duration="49000" />
       <workItem from="1586777784702" duration="8537000" />
       <workItem from="1586800035441" duration="514000" />
-      <workItem from="1586801243905" duration="1969000" />
+      <workItem from="1586801243905" duration="2638000" />
+      <workItem from="1586859657936" duration="3329000" />
+      <workItem from="1586863434737" duration="2408000" />
     </task>
     <servers />
   </component>
@@ -245,6 +252,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585328837801" />
+    <state x="1041" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586861712745">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1041" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1586861712745" />
     <state x="960" y="435" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586777718248">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -253,22 +264,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="426" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586428253876" />
-    <state width="2517" height="307" key="GridCell.Tab.0.bottom" timestamp="1586803250899">
+    <state width="2517" height="307" key="GridCell.Tab.0.bottom" timestamp="1586862990381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1586803250899" />
-    <state width="2517" height="307" key="GridCell.Tab.0.center" timestamp="1586803250899">
+    <state width="2517" height="307" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1586862990381" />
+    <state width="2517" height="307" key="GridCell.Tab.0.center" timestamp="1586862990381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1586803250899" />
-    <state width="2517" height="307" key="GridCell.Tab.0.left" timestamp="1586803250899">
+    <state width="2517" height="307" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1586862990381" />
+    <state width="2517" height="307" key="GridCell.Tab.0.left" timestamp="1586862990381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1586803250899" />
-    <state width="2517" height="307" key="GridCell.Tab.0.right" timestamp="1586803250899">
+    <state width="2517" height="307" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1586862990381" />
+    <state width="2517" height="307" key="GridCell.Tab.0.right" timestamp="1586862990381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1586803250899" />
+    <state width="2517" height="307" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1586862990381" />
     <state width="1258" height="491" key="GridCell.Tab.1.bottom" timestamp="1586791759168">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -289,10 +300,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.2560.1400@0.0.2560.1400" timestamp="1585326927381" />
-    <state x="1177" y="342" key="SettingsEditor" timestamp="1586800068282">
+    <state x="1177" y="342" key="SettingsEditor" timestamp="1586865003879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1177" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1586800068282" />
+    <state x="1177" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1586865003879" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585512276315">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -312,10 +323,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Weterynarz$klienci.coverage" NAME="klienci Coverage Results" MODIFIED="1586784187279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Weterynarz$uslugi.coverage" NAME="uslugi Coverage Results" MODIFIED="1586787665370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Weterynarz$uslugi.coverage" NAME="uslugi Coverage Results" MODIFIED="1586859835498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$pracownicy_uslugi.coverage" NAME="pracownicy_uslugi Coverage Results" MODIFIED="1585912900915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Weterynarz$main.coverage" NAME="main Coverage Results" MODIFIED="1586801887555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Weterynarz$program.coverage" NAME="program Coverage Results" MODIFIED="1586802429981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Weterynarz$main.coverage" NAME="main Coverage Results" MODIFIED="1586861836989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Weterynarz$program.coverage" NAME="program Coverage Results" MODIFIED="1586862815360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$zmiana_hasla.coverage" NAME="zmiana_hasla Coverage Results" MODIFIED="1585469363299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$rezerwacje.coverage" NAME="rezerwacje Coverage Results" MODIFIED="1586786683923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$test.coverage" NAME="test Coverage Results" MODIFIED="1585483558197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

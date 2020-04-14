@@ -378,11 +378,10 @@ class Employee(QWidget):
         """
         test = 'Błąd! Nie można usunąć danego użytkownika!'
         query1 = 'DELETE FROM uzytkownik WHERE uzytkownik_id = %s'
-        val1 = (self.id_modify,)
+        val = (self.id_modify,)
         query2 = 'DELETE FROM godziny WHERE uzytkownik_id = %s'
-        val2 = (self.id_modify,)
         query3 = 'DELETE FROM uzytkownik_usluga WHERE uzytkownik_id = %s'
-        val3 = (self.id_modify,)
+        query4 = 'DELETE FROM wizyty WHERE uzytkownik_id = %s'
         if self.id_modify == 1:
             msg = QMessageBox()
             msg.setIcon(QMessageBox.Critical)
@@ -393,7 +392,7 @@ class Employee(QWidget):
             ret = QMessageBox.question(self, 'Usuwanie użytkownika', "Czy na pewno chcesz usunąć danego użytkownika?",
                                        QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
             if ret == QMessageBox.Yes:
-                if self.if_checked(test, [(query3, val3), (query2, val2), (query1, val1)]):
+                if self.if_checked(test, [(query4, val), (query3, val), (query2, val), (query1, val)]):
                     msg = QMessageBox()
                     msg.setIcon(QMessageBox.Information)
                     msg.setText('Użytkownik został usunięty')

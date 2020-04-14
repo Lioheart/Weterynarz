@@ -249,7 +249,7 @@ class Reservations(QWidget):
         Inicjuje wygląd tabeli pracownik
         """
         self.model_p.setTable('uzytkownik')
-        query = QSqlQuery('SELECT uzytkownik_id, uzytkownik_nazwa, imie, nazwisko, pracownik FROM uzytkownik WHERE '
+        query = QSqlQuery('SELECT uzytkownik_id,  imie, nazwisko FROM uzytkownik WHERE '
                           'pracownik = 1;')
         self.model_p.setQuery(query)
         # self.model_p.select()
@@ -258,10 +258,8 @@ class Reservations(QWidget):
 
         naglowki = {
             'uzytkownik_id': 'ID',
-            'uzytkownik_nazwa': 'Login',
             'imie': 'Imię',
             "nazwisko": 'Nazwisko',
-            'pracownik': 'Pracownik',
         }
         # Ustawianie nagłówków
         ilosc_kolumn = self.model_p.columnCount()
