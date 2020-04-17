@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="12c47430-bc9a-45f5-b132-55044d454314" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baza.py" beforeDir="false" afterPath="$PROJECT_DIR$/baza.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/klienci.py" beforeDir="false" afterPath="$PROJECT_DIR$/klienci.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pracownicy.py" beforeDir="false" afterPath="$PROJECT_DIR$/pracownicy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/qt_pl.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resources/qt_pl.qm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pracownicy_uslugi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pracownicy_uslugi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rezerwacje.py" beforeDir="false" afterPath="$PROJECT_DIR$/rezerwacje.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uslugi.py" beforeDir="false" afterPath="$PROJECT_DIR$/uslugi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zmiana_hasla.py" beforeDir="false" afterPath="$PROJECT_DIR$/zmiana_hasla.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/documentations" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.program">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Weterynarz" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,8 +185,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.program" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.program" />
         <item itemvalue="Python.uslugi" />
         <item itemvalue="Python.rezerwacje" />
         <item itemvalue="Python.pracownicy" />
@@ -233,6 +233,8 @@
       <workItem from="1586801243905" duration="2638000" />
       <workItem from="1586859657936" duration="3329000" />
       <workItem from="1586863434737" duration="2408000" />
+      <workItem from="1586874722286" duration="9000" />
+      <workItem from="1587119403645" duration="333000" />
     </task>
     <servers />
   </component>
@@ -264,22 +266,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="426" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586428253876" />
-    <state width="2517" height="307" key="GridCell.Tab.0.bottom" timestamp="1586862990381">
+    <state width="2517" height="307" key="GridCell.Tab.0.bottom" timestamp="1587119735715">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1586862990381" />
-    <state width="2517" height="307" key="GridCell.Tab.0.center" timestamp="1586862990381">
+    <state width="2517" height="307" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587119735715" />
+    <state width="2517" height="307" key="GridCell.Tab.0.center" timestamp="1587119735715">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1586862990381" />
-    <state width="2517" height="307" key="GridCell.Tab.0.left" timestamp="1586862990381">
+    <state width="2517" height="307" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587119735715" />
+    <state width="2517" height="307" key="GridCell.Tab.0.left" timestamp="1587119735715">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1586862990381" />
-    <state width="2517" height="307" key="GridCell.Tab.0.right" timestamp="1586862990381">
+    <state width="2517" height="307" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587119735715" />
+    <state width="2517" height="307" key="GridCell.Tab.0.right" timestamp="1587119735715">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1586862990381" />
+    <state width="2517" height="307" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587119735715" />
     <state width="1258" height="491" key="GridCell.Tab.1.bottom" timestamp="1586791759168">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -325,7 +327,7 @@
     <SUITE FILE_PATH="coverage/Weterynarz$klienci.coverage" NAME="klienci Coverage Results" MODIFIED="1586784187279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$uslugi.coverage" NAME="uslugi Coverage Results" MODIFIED="1586859835498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$pracownicy_uslugi.coverage" NAME="pracownicy_uslugi Coverage Results" MODIFIED="1585912900915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Weterynarz$main.coverage" NAME="main Coverage Results" MODIFIED="1586861836989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Weterynarz$main.coverage" NAME="main Coverage Results" MODIFIED="1587119718353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$program.coverage" NAME="program Coverage Results" MODIFIED="1586862815360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$zmiana_hasla.coverage" NAME="zmiana_hasla Coverage Results" MODIFIED="1585469363299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$rezerwacje.coverage" NAME="rezerwacje Coverage Results" MODIFIED="1586786683923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

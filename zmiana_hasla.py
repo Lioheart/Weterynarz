@@ -6,7 +6,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QGroupBox, QGridLayout, QLabel, QPushButton, QLineEdit, \
     QSizePolicy, QHBoxLayout, QMessageBox
 
-from baza import polaczenie
+from baza import query_to_db
 
 
 class Password(QWidget):
@@ -80,7 +80,7 @@ class Password(QWidget):
         query = 'UPDATE uzytkownik SET haslo = sha(%s) WHERE uzytkownik_id = %s AND haslo = sha(%s);'
         prevent = (self.txt_h_nowe1.text(), self.parent.parent.user_id, self.txt_h_stare.text())
         try:
-            if polaczenie(query, prevent) != 0:
+            if query_to_db(query, prevent) != 0:
                 msg = QMessageBox()
                 msg.setIcon(QMessageBox.Information)
                 msg.setText("Hasło zostało zmienione")

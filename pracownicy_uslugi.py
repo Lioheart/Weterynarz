@@ -8,7 +8,7 @@ from PyQt5.QtSql import QSqlDatabase, QSqlTableModel, QSqlQuery, QSqlRelationalT
 from PyQt5.QtWidgets import QWidget, QApplication, QHBoxLayout, QGroupBox, QTableView, QVBoxLayout, QLabel, QFormLayout, \
     QSpacerItem, QSizePolicy, QLineEdit, QAbstractScrollArea, QAbstractItemView, QMessageBox
 
-from baza import HOST, USER, PASSWORD, polaczenie
+from baza import HOST, USER, PASSWORD, query_to_db
 
 
 class ServEmpl(QWidget):
@@ -76,7 +76,7 @@ class ServEmpl(QWidget):
         formbox = QFormLayout()
 
         # Metody
-        txt_wysz.textChanged.connect(self.wyszukiwanie)
+        txt_wysz.textChanged.connect(self.searching)
         self.view_p.clicked.connect(self.change_p)
         self.view_u.doubleClicked.connect(lambda: self.change_add_remove(True))
         self.view_pu.doubleClicked.connect(lambda: self.change_add_remove(False))
@@ -136,7 +136,7 @@ class ServEmpl(QWidget):
                     self.id_pracownik,
                     id_modify
                 )
-                if polaczenie(query, val):
+                if query_to_db(query, val):
                     msg = QMessageBox()
                     msg.setIcon(QMessageBox.Information)
                     msg.setText('Usługa została dodana do usług oferowanych przez pracownika')
@@ -153,7 +153,7 @@ class ServEmpl(QWidget):
                     self.id_pracownik,
                     id_modify
                 )
-                if polaczenie(query, val):
+                if query_to_db(query, val):
                     msg = QMessageBox()
                     msg.setIcon(QMessageBox.Information)
                     msg.setText('Usługa została dodana do usług oferowanych przez pracownika')
@@ -271,7 +271,7 @@ class ServEmpl(QWidget):
         self.view_pu.setEditTriggers(QAbstractItemView.NoEditTriggers)
 
     @pyqtSlot(str)
-    def wyszukiwanie(self, text):
+    def searching(self, text):
         """
         Wyszukuje po wszystkich kolumnach tabeli
         :param text:

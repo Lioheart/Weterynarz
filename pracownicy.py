@@ -10,7 +10,7 @@ from PyQt5.QtWidgets import QWidget, QLineEdit, QPushButton, QHBoxLayout, QAppli
     QAbstractItemView, QAbstractScrollArea, QVBoxLayout, QLabel, QFormLayout, QGroupBox, QCheckBox, QSpacerItem, \
     QMessageBox
 
-from baza import HOST, USER, PASSWORD, polaczenie, transakcja
+from baza import HOST, USER, PASSWORD, query_to_db, transaction_to_db
 
 
 class Employee(QWidget):
@@ -44,7 +44,7 @@ class Employee(QWidget):
         """
         fbox = QFormLayout()
         fbox.addRow(self.lbl_wysz, self.txt_wysz)
-        self.txt_wysz.textChanged.connect(self.wyszukiwanie)
+        self.txt_wysz.textChanged.connect(self.searching)
         self.table_init()
 
         # Pokazuje wszystko
@@ -243,10 +243,10 @@ class Employee(QWidget):
             print('Trwa zmiana w bazie danych')
             if val:
                 print('Połączenie')
-                polaczenie(q, val)
+                query_to_db(q, val)
             else:
                 print('Transakcja')
-                return transakcja(q)
+                return transaction_to_db(q)
 
             # Odświeżanie widoku tabeli
             self.model.select()
@@ -308,7 +308,7 @@ class Employee(QWidget):
         """
         query = 'SELECT * FROM godziny WHERE uzytkownik_id = %s'
         val = (self.id_modify,)
-        wynik = polaczenie(query, val)
+        wynik = query_to_db(query, val)
 
         test = 'Dane zostały błędnie zmodyfikowane.'
         query = 'UPDATE uzytkownik SET imie = %s, nazwisko = %s, uzytkownik_nazwa = %s, ' \
@@ -340,7 +340,7 @@ class Employee(QWidget):
                 self.txt_sob_do.text(),
                 self.id_modify
             )
-            polaczenie(query, val)
+            query_to_db(query, val)
         elif self.cb_pracownik.checkState():
             query = 'INSERT INTO godziny SET uzytkownik_id = %s, pon_od = %s, pon_do = %s, wt_od = %s, wt_do = %s, ' \
                     'sr_od = %s, ' \
@@ -361,7 +361,7 @@ class Employee(QWidget):
                 self.txt_sob_od.text(),
                 self.txt_sob_do.text()
             )
-            polaczenie(query, val)
+            query_to_db(query, val)
         msg = QMessageBox(self)
         msg.setIcon(QMessageBox.Information)
         msg.setText('Zmodyfikowano dane użytkownika')
@@ -438,7 +438,7 @@ class Employee(QWidget):
         if self.cb_pracownik.checkState():
             query = 'SELECT * FROM godziny WHERE uzytkownik_id = %s'
             val = (self.id_modify,)
-            wynik = polaczenie(query, val)
+            wynik = query_to_db(query, val)
             for i, value in enumerate(self.pola, 2):
                 if wynik:
                     value.setText(str(wynik[i]))
@@ -446,7 +446,7 @@ class Employee(QWidget):
                     value.setText('')
 
     @pyqtSlot(str)
-    def wyszukiwanie(self, text):
+    def searching(self, text):
         """
         Wyszukuje po wszystkich kolumnach tabeli
         :param text:

@@ -11,11 +11,11 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QStyleFactory, QDialogButtonBox, QDialog, QLabel, QLineEdit, QFormLayout, \
     QMessageBox, QApplication
 
-from baza import polaczenie
+from baza import query_to_db
 from program import Program
 
 
-class UI_Logowanie(QDialog):
+class UI_Login(QDialog):
     """
     Klasa odpowiedzialna za okno logowania
     """
@@ -53,17 +53,17 @@ class UI_Logowanie(QDialog):
         self.setFixedSize(300, 100)
         self.setWhatsThis('<h3>Pole logowania</h3>')
 
-        self.buttonBox.accepted.connect(self.zaloguj)
-        self.buttonBox.rejected.connect(self.anuluj)
+        self.buttonBox.accepted.connect(self.login)
+        self.buttonBox.rejected.connect(self.cancel)
         self.show()
 
-    def anuluj(self):
+    def cancel(self):
         """
         Metoda Anuluj. Wyłącza aplikację
         """
         sys.exit(app.exec_())
 
-    def zaloguj(self):
+    def login(self):
         """
         Metoda Zaloguj. Sprawdza, czy dany użytkownik jest w bazie, po czy zwraca jego ID
         :return: ID użytkownika
@@ -71,7 +71,7 @@ class UI_Logowanie(QDialog):
         login = self.txtlogin.text()
         haslo = self.txthaslo.text()
         query = "SELECT * FROM uzytkownik WHERE uzytkownik_nazwa = '{}' AND haslo = sha('{}');".format(login, haslo)
-        odczytanie = polaczenie(query)
+        odczytanie = query_to_db(query)
         if odczytanie:
             self.accept()
             return odczytanie[0]
@@ -101,7 +101,7 @@ if __name__ == "__main__":
     translator.load('./resources/qt_pl.qm')
     app.installTranslator(translator)
 
-    ui = UI_Logowanie()
+    ui = UI_Login()
     id_user = ui.exec_()
     if id_user == QtWidgets.QDialog.Accepted:
         main_window = Program(id_user)

@@ -10,7 +10,7 @@ PASSWORD = 'blQCzhy3Dn'
 query = "SELECT * FROM uzytkownik WHERE uzytkownik_nazwa = '{}' AND haslo = sha({}) ;".format('admin', '123')
 
 
-def polaczenie(q, sqlinjection=None):
+def query_to_db(q, sqlinjection=None):
     """
     Funkcja wykonująca jedno zapytanie na bazie danych
     :param sqlinjection: String dane
@@ -52,7 +52,7 @@ def polaczenie(q, sqlinjection=None):
         return True
 
 
-def transakcja(*args):
+def transaction_to_db(*args):
     """
     Funkcja wykonująca transakcje na bazie danych (czyli kilka query naraz)
     :param args:
@@ -87,5 +87,5 @@ def transakcja(*args):
 
 
 if __name__ == '__main__':
-    print(polaczenie(query))
+    print(query_to_db(query))
     print(query)

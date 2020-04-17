@@ -10,7 +10,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLa
     QGroupBox, QCalendarWidget, QSizePolicy, QDateTimeEdit, QAbstractScrollArea, QAbstractItemView, QMessageBox, \
     QComboBox, QDialogButtonBox, QDialog, QInputDialog
 
-from baza import HOST, USER, PASSWORD, polaczenie, transakcja
+from baza import HOST, USER, PASSWORD, query_to_db, transaction_to_db
 
 
 class Reservations(QWidget):
@@ -112,9 +112,9 @@ class Reservations(QWidget):
         self.lbl_termin_.setCalendarWidget(self.kalendarz)
         self.lbl_termin_.setDate(self.kalendarz.selectedDate())
         self.dzien_tyg = self.kalendarz.selectedDate().dayOfWeek()
-        txt_wysz_u.textChanged.connect(self.wyszukiwanie_u)
-        txt_wysz_k.textChanged.connect(self.wyszukiwanie_k)
-        txt_wysz_p.textChanged.connect(self.wyszukiwanie_p)
+        txt_wysz_u.textChanged.connect(self.searching_u)
+        txt_wysz_k.textChanged.connect(self.searching_k)
+        txt_wysz_p.textChanged.connect(self.searching_p)
         self.view_k.clicked.connect(lambda: self.clicked_table(self.view_k))
         self.view_p.clicked.connect(lambda: self.clicked_table(self.view_p))
         self.view_u.clicked.connect(lambda: self.clicked_table(self.view_u))
@@ -347,7 +347,7 @@ class Reservations(QWidget):
             }
             query = 'SELECT date_format({}, "%H") AS g_start, date_format({}, "%H") AS g_stop FROM godziny WHERE ' \
                     'uzytkownik_id = {};'.format(dzien[self.dzien_tyg][0], dzien[self.dzien_tyg][1], self.id_pracownik)
-            wynik = polaczenie(query)
+            wynik = query_to_db(query)
             if wynik:
                 godzina_stop = (int(wynik[1]) - int(wynik[0])) * 2
                 godzina = int(wynik[0])
@@ -403,10 +403,10 @@ class Reservations(QWidget):
             print('Trwa zmiana w bazie danych')
             if val:
                 print('Połączenie')
-                polaczenie(q, val)
+                query_to_db(q, val)
             else:
                 print('Transakcja')
-                return transakcja(q)
+                return transaction_to_db(q)
 
             return True
 
@@ -562,7 +562,7 @@ class Reservations(QWidget):
         self.lbl_termin_.setTime(self.czas[15])
 
     @pyqtSlot(str)
-    def wyszukiwanie_u(self, text):
+    def searching_u(self, text):
         """
         Wyszukuje po wszystkich kolumnach tabeli
         :param text:
@@ -576,7 +576,7 @@ class Reservations(QWidget):
         self.proxy_u.setFilterKeyColumn(-1)
 
     @pyqtSlot(str)
-    def wyszukiwanie_k(self, text):
+    def searching_k(self, text):
         """
         Wyszukuje po wszystkich kolumnach tabeli
         :param text:
@@ -590,7 +590,7 @@ class Reservations(QWidget):
         self.proxy_k.setFilterKeyColumn(-1)
 
     @pyqtSlot(str)
-    def wyszukiwanie_p(self, text):
+    def searching_p(self, text):
         """
         Wyszukuje po wszystkich kolumnach tabeli
         :param text:

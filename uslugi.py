@@ -8,7 +8,7 @@ from PyQt5.QtSql import QSqlDatabase, QSqlTableModel, QSqlQuery
 from PyQt5.QtWidgets import QWidget, QApplication, QHBoxLayout, QAbstractScrollArea, QAbstractItemView, QTableView, \
     QLabel, QLineEdit, QGroupBox, QVBoxLayout, QPushButton, QFormLayout, QTextEdit, QMessageBox
 
-from baza import HOST, USER, PASSWORD, polaczenie, transakcja
+from baza import HOST, USER, PASSWORD, query_to_db, transaction_to_db
 
 
 class Services(QWidget):
@@ -63,7 +63,7 @@ class Services(QWidget):
 
         # Metody
         self.view.clicked.connect(self.change)
-        txt_wysz.textChanged.connect(self.wyszukiwanie)
+        txt_wysz.textChanged.connect(self.searching)
         btn_dodaj.clicked.connect(self.add)
         self.btn_mod.clicked.connect(self.modify)
         self.btn_usun.clicked.connect(self.remove)
@@ -160,12 +160,12 @@ class Services(QWidget):
             print('Trwa zmiana w bazie danych')
             if val:
                 print('Połączenie')
-                t = polaczenie(q, val)
+                t = query_to_db(q, val)
                 print(t)
                 return t  # = polaczenie(q, val)
             else:
                 print('Transakcja')
-                return transakcja(q)
+                return transaction_to_db(q)
 
     def add(self):
         """
@@ -250,7 +250,7 @@ class Services(QWidget):
         self.view.reset()
 
     @pyqtSlot(str)
-    def wyszukiwanie(self, text):
+    def searching(self, text):
         """
         Wyszukuje po wszystkich kolumnach tabeli
         :param text:
