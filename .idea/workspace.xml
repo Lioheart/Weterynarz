@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="12c47430-bc9a-45f5-b132-55044d454314" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baza.py" beforeDir="false" afterPath="$PROJECT_DIR$/baza.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klienci.py" beforeDir="false" afterPath="$PROJECT_DIR$/klienci.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pracownicy.py" beforeDir="false" afterPath="$PROJECT_DIR$/pracownicy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pracownicy_uslugi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pracownicy_uslugi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rezerwacje.py" beforeDir="false" afterPath="$PROJECT_DIR$/rezerwacje.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uslugi.py" beforeDir="false" afterPath="$PROJECT_DIR$/uslugi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zmiana_hasla.py" beforeDir="false" afterPath="$PROJECT_DIR$/zmiana_hasla.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +63,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/documentations" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -87,28 +80,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pracownicy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Weterynarz" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pracownicy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +110,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="rezerwacje" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Weterynarz" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,7 +123,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rezerwacje.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Weterynarz" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,10 +179,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.test2" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.program" />
         <item itemvalue="Python.uslugi" />
-        <item itemvalue="Python.rezerwacje" />
-        <item itemvalue="Python.pracownicy" />
       </list>
     </recent_temporary>
   </component>
@@ -235,6 +228,10 @@
       <workItem from="1586863434737" duration="2408000" />
       <workItem from="1586874722286" duration="9000" />
       <workItem from="1587119403645" duration="333000" />
+      <workItem from="1587129463957" duration="27000" />
+      <workItem from="1587220387107" duration="724000" />
+      <workItem from="1587222058987" duration="22000" />
+      <workItem from="1587549571311" duration="4043000" />
     </task>
     <servers />
   </component>
@@ -266,22 +263,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="426" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586428253876" />
-    <state width="2517" height="307" key="GridCell.Tab.0.bottom" timestamp="1587119735715">
+    <state width="2517" height="306" key="GridCell.Tab.0.bottom" timestamp="1587553620371">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587119735715" />
-    <state width="2517" height="307" key="GridCell.Tab.0.center" timestamp="1587119735715">
+    <state width="2517" height="306" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1587553620371" />
+    <state width="2517" height="306" key="GridCell.Tab.0.center" timestamp="1587553620371">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587119735715" />
-    <state width="2517" height="307" key="GridCell.Tab.0.left" timestamp="1587119735715">
+    <state width="2517" height="306" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1587553620371" />
+    <state width="2517" height="306" key="GridCell.Tab.0.left" timestamp="1587553620371">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587119735715" />
-    <state width="2517" height="307" key="GridCell.Tab.0.right" timestamp="1587119735715">
+    <state width="2517" height="306" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1587553620371" />
+    <state width="2517" height="306" key="GridCell.Tab.0.right" timestamp="1587553620371">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="307" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587119735715" />
+    <state width="2517" height="306" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1587553620371" />
     <state width="1258" height="491" key="GridCell.Tab.1.bottom" timestamp="1586791759168">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -302,10 +299,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.2560.1400@0.0.2560.1400" timestamp="1585326927381" />
-    <state x="1177" y="342" key="SettingsEditor" timestamp="1586865003879">
+    <state x="1177" y="342" key="SettingsEditor" timestamp="1587553105945">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1177" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1586865003879" />
+    <state x="1177" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1587553105945" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585512276315">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -327,11 +324,12 @@
     <SUITE FILE_PATH="coverage/Weterynarz$klienci.coverage" NAME="klienci Coverage Results" MODIFIED="1586784187279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$uslugi.coverage" NAME="uslugi Coverage Results" MODIFIED="1586859835498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$pracownicy_uslugi.coverage" NAME="pracownicy_uslugi Coverage Results" MODIFIED="1585912900915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Weterynarz$main.coverage" NAME="main Coverage Results" MODIFIED="1587119718353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Weterynarz$main.coverage" NAME="main Coverage Results" MODIFIED="1587550711218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$program.coverage" NAME="program Coverage Results" MODIFIED="1586862815360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$zmiana_hasla.coverage" NAME="zmiana_hasla Coverage Results" MODIFIED="1585469363299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$rezerwacje.coverage" NAME="rezerwacje Coverage Results" MODIFIED="1586786683923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Weterynarz$test.coverage" NAME="test Coverage Results" MODIFIED="1585483558197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Weterynarz$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1587221098433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Weterynarz$test.coverage" NAME="test Coverage Results" MODIFIED="1587220664089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$baza.coverage" NAME="baza Coverage Results" MODIFIED="1585479741467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Weterynarz$pracownicy.coverage" NAME="pracownicy Coverage Results" MODIFIED="1586784378839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

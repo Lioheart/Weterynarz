@@ -5,7 +5,7 @@ Login:  admin
 
 Hasło:  123
 ### Instalacja
-Aby zainstalować program, wystarczy pobrać plik [setup.exe] (https://github.com/Lioheart/Weterynarz/releases/latest)
+Aby zainstalować program, wystarczy pobrać plik [setup.exe](https://github.com/Lioheart/Weterynarz/releases/latest)
 ### Uruchomienie ze źródeł
 W przypadku chęci uruchomienia ze źródeł, należe zainstalować Python conajmniej w wersji 3.7.5 oraz git.
 * Należy pobrać repozytorium, wpisując w terminal komendę `git clone https://github.com/Lioheart/Weterynarz.git`
