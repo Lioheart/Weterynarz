@@ -6,6 +6,9 @@ Login:  admin
 Hasło:  123
 ### Instalacja
 Aby zainstalować program, wystarczy pobrać plik [setup.exe](https://github.com/Lioheart/Weterynarz/releases/latest)
+
+**Koniecznie** trzeba zainstalować najnowszy [pakiet redystrybucyjny Microsoft Visual C++ dla programu Visual Studio
+ 2015, 2017 i 2019](https://support.microsoft.com/pl-pl/help/2977003/the-latest-supported-visual-c-downloads)
 ### Uruchomienie ze źródeł
 W przypadku chęci uruchomienia ze źródeł, należe zainstalować [Python](https://www.python.org/downloads/) w wersji co
   najmniej 3.7.5 (koniecznie zaznacz pole add to PATH), oraz [git](https://git-scm.com/downloads).
