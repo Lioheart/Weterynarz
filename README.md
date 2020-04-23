@@ -7,15 +7,22 @@ Hasło:  123
 ### Instalacja
 Aby zainstalować program, wystarczy pobrać plik [setup.exe](https://github.com/Lioheart/Weterynarz/releases/latest)
 ### Uruchomienie ze źródeł
-W przypadku chęci uruchomienia ze źródeł, należe zainstalować Python conajmniej w wersji 3.7.5 oraz git.
+W przypadku chęci uruchomienia ze źródeł, należe zainstalować [Python](https://www.python.org/downloads/) w wersji co
+  najmniej 3.7.5 (koniecznie zaznacz pole add to PATH), oraz [git](https://git-scm.com/downloads).
+* Aby uruchomić PowerShell w systemie Windows 10, kliknij prawym przyciskiem myszy w start, następnie wybierz
+  Program Windows PowerShell.
 * Należy pobrać repozytorium, wpisując w terminal komendę `git clone https://github.com/Lioheart/Weterynarz.git`
-* Następnie przechodzimy do katalogu `cd .\Weterynarz`
-* W danym folderze uruchamiamy komendę, aby zainicjować utworzenie venv `python3 -m venv venv`
-* Następnie tworzymy venv za pomocą komendy `virtualenv venv`
-* Należy teraz aktywować venv za pomocą komendy (tylko linux i macOS) `source venv/bin/activate`
+* Następnie przechodzimy do katalogu`cd Weterynarz` lub dla PowerShell `cd .\Weterynarz`
+ * Uruchom drugie okno konsoli lub PowerShella w trybie administratora.
+ * Zainstaluj paczkę (tylko z uprawnieniami administratora), dzięki której utworzysz wirtualne środowisko `pip install
+  virtualenv`
+ * Przejdź do pierwszego okna i utwórz virtual env za pomocą komendy `virtualenv venv`
+ * Należy teraz aktywować virtual env za pomocą komendy (tylko linux i macOS) `source venv/bin/activate`
+ * W przypadku, gdy używamy konsoli cmd Microsoft Windows należy użyć komendy `venv\Scripts\activate`
 - **W przypadku systemu Windows:**
     - Uruchom Windows PowerShell w trybie administratora i wprowadź poniższą komendę, zgadzając się na zmiany `Set-ExecutionPolicy RemoteSigned`
-    - Następnie uruchom Windows PowerShell bez uprawnień, przejdź do katalogu z projektem, po czym użyj komendy `venv\Scripts\activate`
+    - Następnie przejdź do okna Windows PowerShell, w którym wykonywałeś poprzednie polecenia, przejdź do katalogu z
+  projektem, po czym użyj komendy `venv\Scripts\activate`
     - Przejdź ponownie do Windows PowerShell w trybie administratora i wycofaj zmiany, za pomocą komendy `Set-ExecutionPolicy Restricted`   
 * Zainstaluj niezbędne pakiety używając komendy `python setup.py install`
 * Ostatnią rzeczą jaką należy wykonać, to skopiować plik sip za pomocą poniższej komendy. Jest to potrzebne, ze wzgl
